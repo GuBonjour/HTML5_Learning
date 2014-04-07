@@ -1,0 +1,17 @@
+table.List {
+	PADDING-TOP: 4px;
+	BACKGROUND-COLOR: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-collapse: collapse;
+	border: 1px solid #1855C6;
+	cell-spacing: 0px;
+}
+table.List TH {
+	background: url(http://img.kqyx.cn/admin/th_bg.gif);
+	HEIGHT: 24px;
+	border: 1px solid #1855C6;
+}
+

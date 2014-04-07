@@ -1,0 +1,101 @@
+input.button_1 {
+	background-color: #4682B4;
+	width: 76px;
+	height: 22px;
+	border: none;
+	font: 12px/18px;
+	border-radius: 5px;
+	color: #FFFFFF
+}
+
+input.input_01 {
+	width: 76px;
+	border: none;
+	font: 12px/18px;
+	COLOR: #FFFFFF;
+	line-height: 22px;
+	cursor: pointer;
+	height: 22px;
+}
+
+@-webkit-keyframes greenPulse {
+from {
+	background-color: #749a02;
+	-webkit-box-shadow: 0 0 9px #333;
+}
+50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+to {
+	background-color: #749a02;
+	-webkit-box-shadow: 0 0 9px #333;
+}
+}
+
+button.green {
+	-webkit-animation-name: greenPulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+table.tableType1 {
+	border: 0px;
+	cell-spacing: 0px;
+	border-radius: 10px;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+}
+
+table.tableType1 th {
+	border: 0px;
+	background-color: #4682B4;
+	color: #FFFFFF;
+	border-radius: 5px;
+	margin: 0px;
+	padding: 0px 0px 0px 5px ;
+	font-family: "微软雅黑", "黑体", "宋体";
+	font-size: 12px;
+	height: 36px;
+}
+
+table.tableType1 td {
+	border: 0px;
+	background-color: #333333;
+	color: #FFFFFF;
+	border-radius: 5px;
+	margin: 0px;
+	padding:  0px 0px 0px 5px;
+	font-family: "微软雅黑", "黑体", "宋体";
+	font-size: 12px;
+	height: 36px;
+}
+
+input.textboxType1 {
+	border-radius: 5px;
+	background-color: #808080;
+}
+
+@-webkit-keyframes rainbowPulse {
+from {
+	background-color: #4169E1;
+	-webkit-box-shadow: 0 0 9px #333;
+}
+50% { background-color: #6495ED;
+	-webkit-box-shadow: 0 0 18px #6495ED;
+}
+to {
+	background-color: #4169E1;
+	-webkit-box-shadow: 0 0 9px #333;
+}
+}
+
+button.green {
+	-webkit-animation-name: greenPulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+input.rainbow {
+	-webkit-animation-name: rainbowPulse;
+	-webkit-animation-duration: 6s;
+	-webkit-animation-iteration-count: infinite;
+}
