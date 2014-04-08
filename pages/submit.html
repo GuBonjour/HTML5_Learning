@@ -3,8 +3,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Gu's CSS &amp; JS testing page</title>
-		<script src="/hello_world/js/jquery.js"></script>
-		<link rel="stylesheet" type="text/css" href="/HTML5_Learning/css/myCSS.css" />		
+		<script src="/HTML5_Learning/js/lib/jquery.js"></script>
+		<script src="/HTML5_Learning/js/myjs/myJS.js"></script>
+		<link rel="stylesheet" type="text/css" href="/HTML5_Learning/css/myCSS.css" />
 	</head>
 	<body>
 		<table>
@@ -14,27 +15,31 @@
 					<table class="tableType1" id="tb_infoInput"  border="1" width="210px">
 						<tr>
 							<td scope="col" id="name_h" width="60px">Name:</td><td scope="col" >
-							<input type="text"id="name_in" autofocus="autofocus" class="textboxType1"/>
+							<input type="text"id="name_in" autofocus="autofocus" class="textboxType1" maxlength="6"/>
 							</td>
 						</tr>
 						<tr>
 							<td scope="row" id="code_h">Code:</td><td scope="row" >
-							<input type="text" id="code_in" class="textboxType1"/>
+							<input type="text" id="code_in" class="textboxType1" maxlength="8"/>
 							</td>
 						</tr>
 					</table>
 					<table id="tb_btn" width="200" border="0">
 						<tr align="right">
 							<td>
-							<input type="submit" class="button_1" id="btn_Submit" onclick=""   value="Submit"/>
-							<input type="submit" class="button_1" id="btn_Clear" onclick="" value="Clear"/>
+							<input type="submit" class="button_1" id="btn_Submit" onclick="checkUserInfo()"   value="Submit"/>
+							<input type="submit" class="button_1" id="btn_Clear" onclick="clearUI('name_in,code_in')" value="Clear"/>
+							<!-- <input type="submit" class="button_1" id="btn_Clear" onclick="clearUserInfo()" value="Clear"/> -->
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+							<input type="submit"  class="rainbow" value="Lamp" onclick="testjs()"/>
 							</td>
 						</tr>
 					</table>
 				</div></td>
-				<td align="right">
-				<input type="submit"  class="rainbow" value="Lamp"/>
-				</td>
+
 			</tr>
 		</table>
 	</body>
